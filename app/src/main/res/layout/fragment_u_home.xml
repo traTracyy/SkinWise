@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".User.UHome">
+
+        <LinearLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/welcometxt"
+                android:layout_width="wrap_content"
+                android:text="username"
+                android:textStyle="italic|bold"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/viewtypes"
+                android:layout_width="wrap_content"
+                android:text="@string/View"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darker"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"/>
+            <Button
+                android:id="@+id/detailsbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_corner3"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/viewtypes"
+                app:backgroundTint="@null"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="false"
+                android:textColor="@color/darker"
+                android:textAlignment="center"
+                android:text="@string/fill"/>
+            <!--        <ImageView-->
+            <!--            android:id="@+id/imageView"-->
+            <!--            android:layout_below="@+id/welcometxt"-->
+            <!--            android:layout_marginTop="30dp"-->
+            <!--            android:layout_width="350dp"-->
+            <!--            android:layout_height="350dp"-->
+            <!--            android:layout_centerHorizontal="true"-->
+            <!--            android:src="@drawable/round_corner2"-->
+            <!--            android:padding="10dp"/>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/photo"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal">
+
+
+                <!-- Border ImageView -->
+
+                <!-- Small Image Icon -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/round_corner2" />
+
+                <ImageView
+                    android:id="@+id/iconImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_image" />
+
+                <!-- Label -->
+                <TextView
+                    android:id="@+id/uploadLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iconImageView"
+                    android:layout_centerHorizontal="true"
+                    android:text="Upload image from album"
+                    android:textColor="@color/darker"
+                    android:textSize="14sp"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agetxt"
+                    android:layout_below="@id/photo"
+                    android:layout_marginTop="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/agetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/resultbtn"
+                        android:textColor="@color/darker"
+                        android:text="Your Age:\t\t\t" />
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="40dp"
+                        android:layout_below="@id/agetxt"
+                        android:textColorHint="@color/darker"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:textAlignment="textStart"
+                        android:backgroundTint="@color/darker"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:textColor="@color/darker" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/locationtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="textEnd"
+                    android:textSize="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/agetxt"
+                    android:textColor="@color/darker"
+                    android:text="Lesion's Location:" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:layout_below="@id/locationtxt"
+                    android:id="@+id/radio_group_anatomical_site">
+
+                    <RadioButton
+                        android:id="@+id/radio_anterior_torso"
+                        android:layout_width="wrap_content"
+                        android:buttonTint="@color/darker"
+                        android:textSize="12dp"
+                        android:textColor="@color/darker"
+                        android:layout_height="23dp"
+                        android:text="Anterior Torso" />
+                    <RadioButton
+                        android:id="@+id/radio_upper_extremity"
+                        android:layout_width="wrap_content"
+                        android:buttonTint="@color/darker"
+                        android:textSize="12dp"
+                        android:textColor="@color/darker"
+                        android:layout_height="23dp"
+                        android:text="Upper Extremity" />
+                    <RadioButton
+                        android:id="@+id/radio_posterior_torso"
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/darker"
+                        android:buttonTint="@color/darker"
+                        android:layout_height="23dp"
+                        android:text="Posterior Torso" />
+                    <RadioButton
+                        android:id="@+id/radio_lower_extremity"
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/darker"
+                        android:buttonTint="@color/darker"
+                        android:layout_height="23dp"
+                        android:text="Lower Extremity" />
+                    <RadioButton
+                        android:id="@+id/radio_lateral_torso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/darker"
+                        android:buttonTint="@color/darker"
+                        android:text="Lateral Torso" />
+                    <RadioButton
+                        android:id="@+id/radio_head_neck"
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/darker"
+                        android:layout_height="23dp"
+                        android:buttonTint="@color/darker"
+                        android:text="Head/Neck" />
+                    <RadioButton
+                        android:id="@+id/radio_palms_soles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:textSize="12dp"
+                        android:buttonTint="@color/darker"
+                        android:textColor="@color/darker"
+                        android:text="Palms/Soles" />
+                    <RadioButton
+                        android:id="@+id/radio_oral_genital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:textSize="12dp"
+                        android:buttonTint="@color/darker"
+                        android:textColor="@color/darker"
+                        android:text="Oral/Genital" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/gendertxt"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:text="Gender:\t\t"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/darker"
+                    android:textStyle="bold"
+                    android:layout_below="@id/radio_group_anatomical_site"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/gendertxt"
+                    android:id="@+id/radio_group_gender"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:textSize="12dp"
+                        android:buttonTint="#3A435A"
+                        android:textColor="@color/darker"
+                        android:text="Male" />
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:textSize="12dp"
+                        android:buttonTint="@color/darker"
+                        android:textColor="@color/darker"
+                        android:text="Female" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/resultbtn"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/round_corner"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:text="View Result"
+                    android:layout_below="@id/radio_group_gender"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+</ScrollView>

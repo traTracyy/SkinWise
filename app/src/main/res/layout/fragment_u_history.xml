@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.UHistory">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ohistory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lighter"
+            android:gravity="center"
+            android:text="@string/history"
+            android:textColor="@color/darker"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+<!--        <Button-->
+<!--            android:id="@+id/fav"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_below="@+id/ohistory"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAllCaps="false"-->
+<!--            app:backgroundTint="@color/darker"-->
+<!--            android:drawableLeft="@drawable/ic_favorite"-->
+<!--            android:text="@string/VFavorite"/>-->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:textStyle="italic|bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darker"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/HisRv"
+            app:stackFromEnd="true"
+            android:padding="10dp"
+            android:layout_below="@+id/ohistory"
+            app:reverseLayout="true"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/urow_history"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.AUserInfo">
+    <RelativeLayout
+        android:id="@+id/Rlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/bacttxt"
+            android:textColor="@color/darker"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/backbtn"
+            android:text="@string/Back"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+
+        <ImageView
+            android:id="@+id/userInfo_ShopImg"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="200dp"
+            android:background="@drawable/round_corner3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile" /> <!-- Replace with a default image -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UID: "
+                android:textColor="@color/darker"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/userInfo_Uid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darker"
+                android:text="UID"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name: "
+                android:textColor="@color/darker"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/userInfo_Name"
+                android:layout_width="match_parent"
+                android:textColor="@color/darker"
+                android:layout_height="wrap_content"
+                android:text="Name "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textColor="@color/darker"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/userInfo_Email"
+                android:layout_width="match_parent"
+                android:textColor="@color/darker"
+                android:layout_height="wrap_content"
+                android:text="Email "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number: "
+                android:textColor="@color/darker"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/userInfo_Phnum"
+                android:layout_width="match_parent"
+                android:textColor="@color/darker"
+                android:layout_height="wrap_content"
+                android:text="Phone Number "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State: "
+                android:textColor="@color/darker"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/userInfo_State"
+                android:layout_width="match_parent"
+                android:textColor="@color/darker"
+                android:layout_height="wrap_content"
+                android:text="State "/>
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/deleteUserButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner3"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/passwordhint2"
+            android:layout_marginTop="45dp"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:textColor="@color/darker"
+            android:text="Delete User"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

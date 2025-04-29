@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="90dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="User.UDiseaseDetails">
+
+        <RelativeLayout
+            android:id="@+id/Rlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/ic_back"/>
+            <TextView
+                android:id="@+id/bacttxt"
+                android:textColor="@color/darker"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/backbtn"
+                android:text="@string/Back"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textColor="@color/darker"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="The results are not 100% accurate, please consult a specialist if necessary."/>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/round_corner2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lesion_type_text"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Skin Lesion Type:"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lesion_type"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Type"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Age: "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/agetxt"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Location: "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/locationtxt"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Gender: "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gendertxt"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        <TextView
+            android:id="@+id/confidence_text"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/darker"
+            android:layout_height="wrap_content"
+            android:text="\t\tConfidence Levels\t\t"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/confidence_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Melanomatxt"
+                    android:layout_width="240dp"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:text="Melanoma:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Melanoma"
+                    android:textColor="@color/darker"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confidence"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/MVtxt"
+                    android:layout_width="240dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Melanocytic Nevus:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/MV"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Confidence"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/BCCtxt"
+                    android:layout_width="240dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Basal Cell Carcinoma:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/BCC"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Confidence"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/AKtxt"
+                    android:layout_width="240dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Actinic Keratosis:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/AK"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/darker"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Confidence"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/BKtxt"
+                    android:layout_width="240dp"
+                    android:textColor="@color/darker"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:text="Benign Keratosis:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/BK"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Confidence"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/DFtxt"
+                    android:textAlignment="textEnd"
+                    android:layout_width="240dp"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Dermatofibroma:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/DF"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Confidence"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/VLtxt"
+                    android:layout_width="240dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Vascular Lesion:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/VL"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Confidence"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/SCCtxt"
+                    android:layout_width="240dp"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Squamous Cell Carcinoma:"
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/SCC"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/darker"
+                    android:layout_height="wrap_content"
+                    android:text="Confidence"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/savebtn1"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save Result"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/round_cornerlighter"
+                        app:backgroundTint="@null"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:id="@+id/saveresult"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="View"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/round_corner3"
+                        app:backgroundTint="@null"
+                        android:textAllCaps="false"
+                        android:textColor="@color/darker"
+                        android:id="@+id/viewdbtn"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+    </FrameLayout>
+</ScrollView>

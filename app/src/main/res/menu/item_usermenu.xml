@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_uhome"
+        android:title="@string/CList"
+        android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/nav_consult"
+        android:title="@string/consultation"
+        android:icon="@drawable/ic_text"/>
+    <item android:id="@+id/nav_uhistory"
+        android:title="@string/History"
+        android:icon="@drawable/ic_order"/>
+    <item android:id="@+id/nav_fav"
+        android:title="@string/Favorite"
+        android:icon="@drawable/ic_favorite"/>
+    <item android:id="@+id/nav_usetting"
+        android:title="@string/Setting"
+        android:icon="@drawable/ic_setting"/>
+</menu>
+
+
+

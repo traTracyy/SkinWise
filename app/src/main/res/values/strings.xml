@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">SkinWise</string>
+
+    <string name="Login">Login</string>
+    <string name="Recover">Recover \nPassword</string>
+    <string name="Recover1">Recover</string>
+    <string name="Back"><font size="12">Back</font></string>
+    <string name="Email"><font size="15">Email:</font></string>
+    <string name="Address"><font size="12">State:</font></string>
+    <string name="Address1"><font size="12">Address:</font></string>
+    <string name="Name"><font size="12">UserName:</font></string>
+    <string name="Password1"><font size="15">Password:</font></string>
+    <string name="Password2"><font size="15">Confirm Password:</font></string>
+    <string name="Phone"><font size="12">Contact Number:</font></string>
+    <string name="Phone2"><font size="15">Contact\nNumber:</font></string>
+    <string name="forgotpassword"><u>Forgot Password</u></string>
+    <string name="Registeruseracc"><u>Register a User Account</u></string>
+    <string name="Registerdermaacc"><u>Register a Dermatologist Account</u></string>
+    <string name="uploaimage">Upload Image</string>
+    <!--hint-->
+    <string name="passwordhint2"><i><font size="12">Confirm Password </font></i></string>
+    <string name="namehint"><i><font size="12">Username </font></i></string>
+    <string name="namehint1"><i><font size="12">Clinic Name </font></i></string>
+    <string name="passwordhint"><i><font size="12">Password</font></i></string>
+    <string name="passwordhint3"><i><font size="12">Original Password</font></i></string>
+    <string name="emailhint"><i><font size="12">Email Address</font></i></string>
+    <string name="pnhint"><i><font size="12">Phone Number</font></i></string>
+    <string name="shophint"><i><font size="12">Shop Name</font></i></string>
+    <string name="locationhint"><i><font size="12">State</font></i></string>
+    <string name="addressnhint"><i><font size="12">Address</font></i></string>
+    <string name="addressnhint1"><i><font size="12">Clinic Address</font></i></string>
+    <string name="agehint"><i><font size="12">Age</font></i></string>
+    <string name="lesionhint"><i><font size="12">Number of lesions</font></i></string>
+    <string name="type"><i><font size="12">Type a message</font></i></string>
+
+
+    <string name="RegisterDermacc"><font size="12"><u>Register as Dermatologist?</u></font></string>
+    <string name="RegisterUseracc"><font size="12"><u>Register as User?</u></font></string>
+    <string name="UserR">User Register</string>
+    <string name="Register">Register</string>
+    <string name="CList">Home</string>
+    <string name="Setting">Setting</string>
+    <string name="Favorite">Favourite</string>
+    <string name="consultation">Consultation</string>
+    <string name="Tracking">Tracking</string>
+    <string name="History">History</string>
+    <string name="VFavorite">View Favourite</string>
+    <string name="history">Result History</string>
+    <string name="Status"><font size="12">Status  </font></string>
+    <string name="Update"><font size="12">Update</font></string>
+    <string name="Logout"><font size="12">Logout</font></string>
+    <string name="FamHis"><u>\tFamily History:\t</u></string>
+    <string name="PerHis"><u>\tPersonal History:\t</u></string>
+    <string name="View"><u>\tView 8 Types of Skin Lesions\t</u></string>
+    <string name="ChangePassword"><font size="12">Change Password</font></string>
+    <string name="Save"><font size="12">Save</font></string>
+    <string name="fill"><font size="12"><u>Please Fill In Your Details Here!</u></font></string>
+    <string name="Bookconsult"><font size="12">Book a Consultation</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="booking">Booking</string>
+    <string name="Manage">Manage</string>
+    <string name="Feedback">Feedback</string>
+    <string name="ReportIssue"><u>Report Issue</u></string>
+    <string name="Pending">Pending</string>
+
+</resources>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_profile_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="Dermatologist.DSetting">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/profileRL1"
+                android:layout_height="wrap_content">
+
+                <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                    android:id="@+id/profile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_profile"
+                    app:c_border="true"
+                    app:c_border_color="@color/darker"
+                    app:c_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/uploadimg"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/darker"
+                    android:textSize="12dp"
+                    android:text="Upload Profile Image"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/profileRL"
+                android:layout_below="@id/profileRL1">
+
+                <TextView
+                    android:id="@+id/shopStatusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="open/closed"
+                    android:textColor="@color/darker" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/shopswitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darker"
+                    app:thumbTint="@color/main"
+                    app:trackTint="@color/darker" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:id="@+id/report"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/profileRL"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:background="@null"
+                    android:layout_width="25dp"
+                    android:layout_toStartOf="@+id/filtertxt"
+                    android:layout_height="25dp"
+                    android:scaleType="fitXY"
+                    android:tint="@color/darker"
+                    android:id="@+id/filterOrderIb"
+                    android:src="@drawable/ic_report"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/filterOrderIb"
+                    android:text="@string/ReportIssue"
+                    android:textColor="@color/darker" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLayout1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/report"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/nametxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/Name"
+                    android:textColor="@color/darker" />
+
+                <EditText
+                    android:id="@+id/namehint"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_cornerlighter"
+                    android:drawableStart="@drawable/ic_name2"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/namehint"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="8dp"
+                    android:textColor="@color/main"
+                    android:textColorHint="@color/main"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/addresstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namehint"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/Address"
+                    android:textColor="@color/darker" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/addresshint"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addresstxt"
+                    android:background="@drawable/round_corner4"
+                    android:backgroundTint="@color/darker"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_location3"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/main"
+                    android:focusable="true"
+                    android:hint="@string/locationhint"
+                    android:inputType="none"
+                    android:padding="8dp"
+                    android:textColor="@color/main"
+                    android:textColorHint="@color/main"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/addresstxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addresshint"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/Address1"
+                    android:textColor="@color/darker" />
+
+                <EditText
+                    android:id="@+id/addresshint1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addresstxt1"
+                    android:background="@drawable/round_corner4"
+                    android:backgroundTint="@color/darker"
+                    android:drawableStart="@drawable/ic_locationgps"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/main"
+                    android:hint="@string/addressnhint"
+                    android:editable="false"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="8dp"
+                    android:textColor="@color/main"
+                    android:textColorHint="@color/main"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/phonenumbertxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addresshint1"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Phone"
+                    android:textColor="@color/darker" />
+
+                <EditText
+                    android:id="@+id/phonenumberhint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phonenumbertxt"
+                    android:background="@drawable/round_cornerlighter"
+                    android:drawableStart="@drawable/ic_phonenumber2"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/pnhint"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textColor="@color/main"
+                    android:textColorHint="@color/main"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phonenumberhint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/updatebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_btnborder_darker"
+                        android:text="@string/Update"
+                        android:textAllCaps="false"
+                        android:textColor="@color/darker"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/chnagepassowrdbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_btnborder_darker"
+                        android:text="@string/ChangePassword"
+                        android:textAllCaps="false"
+                        android:textColor="@color/darker"
+                        app:backgroundTint="@null" />
+
+                </LinearLayout>
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/updatebtn"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:layout_below="@+id/phonenumberhint"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:background="@drawable/shape_btnborder_darker"-->
+                <!--                    android:text="@string/Update"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="@color/darker"-->
+                <!--                    app:backgroundTint="@null" />-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/chnagepassowrdbtn"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:layout_below="@+id/updatebtn"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:background="@drawable/shape_btnborder_darker"-->
+                <!--                    android:text="@string/ChangePassword"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="@color/darker"-->
+                <!--                    app:backgroundTint="@null" />-->
+
+                <Button
+                    android:id="@+id/logoutbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buttons"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/shape_leafdarker"
+                    android:text="@string/Logout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main"
+                    android:tint="@color/darker"
+                    app:backgroundTint="@color/darker" />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>

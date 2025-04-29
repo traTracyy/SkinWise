@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                app:tint="@color/darker"
+                android:src="@drawable/ic_close"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/resulttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Result: "
+            android:textColor="@color/darker"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/typetxt"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resulttxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Skin Lesion Type"
+            android:textColor="@color/darker"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Detials"
+            android:layout_below="@id/typetxt"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_cornerlighter"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/viewdetialsbtn"
+            />
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darker"
+    tools:context=".Dermatologist.RegisterDermaActivity">
+
+    <RelativeLayout
+        android:id="@+id/Rlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_back2"/>
+        <TextView
+            android:id="@+id/bacttxt"
+            android:textColor="@color/white"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/backbtn"
+            android:text="@string/Back"/>
+
+        <TextView
+            android:id="@+id/registerdermatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:text="@string/RegisterUseracc"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic" />
+
+
+    </RelativeLayout>
+    <!--    <TextView-->
+    <!--        android:id="@+id/usertxt"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="200dp"-->
+    <!--        android:shadowColor="@color/darker"-->
+    <!--        android:shadowDx="6"-->
+    <!--        android:shadowDy="6"-->
+    <!--        android:shadowRadius="5"-->
+    <!--        android:layout_marginTop="225dp"-->
+    <!--        android:text="@string/UserR"-->
+    <!--        android:textColor="@color/lighter"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textStyle="bold" />-->
+
+
+
+    <RelativeLayout
+        android:background="@drawable/shape_border_round2"
+        app:backgroundTint="@null"
+        android:padding="25dp"
+        android:layout_below="@id/Rlayout2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/loginR1">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_profile"
+            android:background="@color/darker"
+            app:c_border="true"
+            app:c_border_color="@color/white"
+            app:c_border_width="1dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="Upload Profile Image"/>
+
+        <EditText
+            android:id="@+id/namehint"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner4"
+            android:layout_marginTop="45dp"
+            android:textSize="12dp"
+            android:drawableStart="@drawable/ic_name3"
+            android:drawablePadding="15dp"
+            android:layout_below="@+id/profile"
+            android:hint="@string/namehint1"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/addresshint"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner4"
+            android:textSize="12dp"
+            android:drawableStart="@drawable/ic_location3"
+            android:drawablePadding="15dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:hint="@string/locationhint"
+            android:layout_below="@+id/namehint"
+            android:padding="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:inputType="none"
+            android:editable="false" />
+
+
+
+        <EditText
+            android:id="@+id/addresshint1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner4"
+            android:textSize="12dp"
+            android:drawableStart="@drawable/ic_locationgps"
+            android:drawablePadding="15dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:hint="@string/addressnhint1"
+            android:layout_below="@+id/addresshint"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/emailhint"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner4"
+            android:drawableStart="@drawable/ic_email3"
+            android:drawablePadding="15dp"
+            android:textSize="12dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:hint="@string/emailhint"
+            android:layout_below="@+id/phonenumberhint"
+            android:inputType="textEmailAddress"
+            android:padding="8dp" />
+
+
+
+        <EditText
+            android:id="@+id/phonenumberhint"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner4"
+            android:drawableStart="@drawable/ic_phonenumber3"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/pnhint"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_below="@+id/addresshint1"
+            android:inputType="phone"
+            android:textSize="12dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/passwordhint"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner4"
+            android:drawableStart="@drawable/ic_locker3"
+            android:drawablePadding="15dp"
+            android:textSize="12dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="@string/passwordhint"
+            android:layout_below="@+id/emailhint"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/passwordhint2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner4"
+            android:textSize="12dp"
+            android:drawableStart="@drawable/ic_password3"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="@string/passwordhint2"
+            android:layout_below="@+id/passwordhint"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/registerbtn1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerwhite"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/passwordhint2"
+            android:layout_marginTop="15dp"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:textColor="@color/darker"
+            android:textSize="11sp"
+            android:text="@string/Register"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

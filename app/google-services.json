@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "255818987943",
+    "project_id": "skinwise-fyp",
+    "storage_bucket": "skinwise-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255818987943:android:ac19a724135125bc029e82",
+        "android_client_info": {
+          "package_name": "com.example.skinwise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDpUxxZRYvr5rQerL3jlYnHtF400NPxjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

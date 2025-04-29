@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darker"
+    tools:context=".User.UDetails">
+
+<!--        backbtn-->
+    <RelativeLayout
+                android:id="@+id/Rlayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/backbtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/white" />
+                <TextView
+                    android:id="@+id/bacttxt"
+                    android:textColor="@color/white"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignStart="@+id/backbtn"
+                    android:text="@string/Back"/>
+
+            </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@drawable/shape_border_round2"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/famtext"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/darker"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="@string/FamHis"/>
+
+            <!-- Question 1 -->
+            <RelativeLayout
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/famtext"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="History of skin cancers\n(e.g., melanoma, basal cell carcinoma, \nsquamous cell carcinoma)" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darker"
+                        app:thumbTint="@color/white"
+                        app:trackTint="@color/main"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yes/no"
+                        android:textSize="12dp"
+                        android:id="@+id/yn1"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Question 2 -->
+            <RelativeLayout
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_below="@id/q1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="History of melanocytic nevi or other skin \nlesions" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darker"
+                        app:thumbTint="@color/white"
+                        app:trackTint="@color/main"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="yes/no"
+                        android:id="@+id/yn2"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Question 3 -->
+            <RelativeLayout
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_below="@id/q2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="History of vascular disorders or birthmarks" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textColor="@color/darker"
+                        app:thumbTint="@color/white"
+                        app:trackTint="@color/main"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="yes/no"
+                        android:id="@+id/yn3"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/pertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/darker"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:layout_below="@id/q3"
+                android:layout_marginTop="20dp"
+                android:text="@string/PerHis"/>
+            <!-- Question 4 -->
+            <RelativeLayout
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_below="@id/pertext"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="Sun exposure habits" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch4"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/darker"
+                        app:thumbTint="@color/white"
+                        android:layout_height="20dp"
+                        app:trackTint="@color/main"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="yes/no"
+                        android:id="@+id/yn4"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- Question 5 -->
+            <RelativeLayout
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_below="@id/q4"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="History of chronic sun exposure or sunburns" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch5"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/darker"
+                        android:layout_height="20dp"
+                        app:thumbTint="@color/white"
+                        app:trackTint="@color/main"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="yes/no"
+                        android:id="@+id/yn5"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- Question 6 -->
+            <RelativeLayout
+                android:id="@+id/q6"
+                android:layout_width="match_parent"
+                android:layout_below="@id/q5"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="History of vascular anomalies or disorders" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch6"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/darker"
+                        android:layout_height="20dp"
+                        app:thumbTint="@color/white"
+                        app:trackTint="@color/main"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="yes/no"
+                        android:id="@+id/yn6"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Question 7 -->
+            <RelativeLayout
+                android:id="@+id/q7"
+                android:layout_width="match_parent"
+                android:layout_below="@id/q6"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="Your Current Age:\t\t" />
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_corner4"
+                    android:layout_toEndOf="@id/question7"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/agehint"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+            <!-- Question 8 -->
+            <RelativeLayout
+                android:id="@+id/q8"
+                android:layout_width="match_parent"
+                android:layout_below="@id/q7"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="Number of lesions:\t\t" />
+                <EditText
+                    android:id="@+id/lesion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_corner4"
+                    android:layout_toEndOf="@id/question8"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/lesionhint"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/darker"
+            android:textSize="12sp"
+            android:text="@string/Save"/>
+    </LinearLayout>
+
+</FrameLayout>

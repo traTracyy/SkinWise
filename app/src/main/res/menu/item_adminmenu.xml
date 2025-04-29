@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_AHome"
+        android:title="@string/Pending"
+        android:icon="@drawable/ic_pending"/>
+    <item android:id="@+id/nav_AView"
+        android:title="@string/Manage"
+        android:icon="@drawable/ic_manage"/>
+    <item android:id="@+id/nav_AFeed"
+        android:title="@string/Feedback"
+        android:icon="@drawable/ic_feedback"/>
+    <item android:id="@+id/nav_Asetting"
+        android:title="@string/Setting"
+        android:icon="@drawable/ic_setting"/>
+</menu>

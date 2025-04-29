@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomDatePickerStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Change background color -->
+        <item name="android:background">@color/white</item>
+        <!-- Change text color -->
+        <item name="android:textColor">@color/darker</item>
+        <!-- Change selected date color -->
+        <item name="colorAccent">@color/darker</item>
+        <!-- Set DatePicker mode to calendar -->
+        <item name="android:datePickerMode">calendar</item>
+        <!-- Change header background color -->
+        <item name="android:headerBackground">@color/darker</item>
+        <!-- Change calendar date text color -->
+        <item name="android:calendarTextColor">@color/darker</item>
+        <!-- Change day of week header background color -->
+        <item name="android:dayOfWeekBackground">@color/darker</item>
+        <!-- Show calendar view -->
+        <item name="android:calendarViewShown">true</item>
+        <!-- Show spinners -->
+        <item name="android:spinnersShown">false</item>
+    </style>
+
+</resources>

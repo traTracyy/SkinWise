@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_profile_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="User.USetting">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_profile"
+                app:c_border="true"
+                app:c_border_color="@color/darker"
+                app:c_border_width="1dp" />
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/darker"
+                android:textSize="12dp"
+                android:text="Upload Profile Image"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:id="@+id/report"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textview"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:background="@null"
+                    android:layout_width="25dp"
+                    android:layout_toStartOf="@+id/filtertxt"
+                    android:layout_height="25dp"
+                    android:scaleType="fitXY"
+                    android:tint="@color/darker"
+                    android:id="@+id/filterOrderIb"
+                    android:src="@drawable/ic_report"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/filterOrderIb"
+                    android:text="@string/ReportIssue"
+                    android:textColor="@color/darker" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/RLayout1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp">
+
+
+            <TextView
+                android:id="@+id/nametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/Name"
+                android:textColor="@color/darker" />
+
+            <EditText
+                android:id="@+id/namehint"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableStart="@drawable/ic_name2"
+                android:drawablePadding="15dp"
+                android:hint="@string/namehint"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="8dp"
+                android:textSize="12dp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main" />
+
+
+            <TextView
+                android:id="@+id/addresstxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namehint"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/Address"
+                android:textColor="@color/darker" />
+
+
+            <EditText
+                android:id="@+id/addresshint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresstxt"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableStart="@drawable/ic_location2"
+                android:drawablePadding="15dp"
+                android:hint="@string/locationhint"
+                android:editable="false"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="8dp"
+                android:textSize="12dp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main" />
+
+            <TextView
+                android:id="@+id/phonenumbertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addresshint"
+                android:layout_marginTop="10dp"
+                android:text="@string/Phone"
+                android:textColor="@color/darker" />
+
+            <EditText
+                android:id="@+id/phonenumberhint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phonenumbertxt"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableStart="@drawable/ic_phonenumber2"
+                android:drawablePadding="15dp"
+                android:hint="@string/pnhint"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textSize="12dp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main" />
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phonenumberhint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/updatebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_btnborder_darker"
+                    android:text="@string/Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/darker"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/chnagepassowrdbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_btnborder_darker"
+                    android:text="@string/ChangePassword"
+                    android:textAllCaps="false"
+                    android:textColor="@color/darker"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logoutbtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/shape_leafdarker"
+                android:text="@string/Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                android:tint="@color/darker"
+                app:backgroundTint="@color/darker" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</ScrollView>

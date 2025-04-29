@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.AManageU">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addadminbtn"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:textAllCaps="false"
+            android:text="Add Administrator"
+            android:layout_gravity="center_horizontal"
+            android:drawableEnd="@drawable/ic_next"
+            android:background="@drawable/round_corner3"
+            android:textColor="@color/darker"
+            app:backgroundTint="@null"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/manageuserbtn"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:textAllCaps="false"
+            android:text="Manage User"
+            android:drawableEnd="@drawable/ic_next"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_corner3"
+            android:textColor="@color/darker"
+            app:backgroundTint="@null"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/managedermabtn"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:drawableEnd="@drawable/ic_next"
+            android:textAllCaps="false"
+            android:text="Manage Dermatologist"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_corner3"
+            android:textColor="@color/darker"
+            app:backgroundTint="@null"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/manageadminbtn"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:textAllCaps="false"
+            android:text="Manage Administrator"
+            android:drawableEnd="@drawable/ic_next"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_corner3"
+            android:textColor="@color/darker"
+            app:backgroundTint="@null"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</FrameLayout>
