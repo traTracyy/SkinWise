@@ -56,13 +56,13 @@ The skin lesion classifier is trained using MobileNetV2 with transfer learning. 
 ## 📸 Screenshots
 
 <h3>Login Page</h3>
-<img src="screenshot/login.png" alt="Login Page" width="400"/>
+<img src="screenshot/login.png" alt="Login Page" width="300"/>
 
 <h3>Diagnosis Result</h3>
-<img src="screenshot/result.png" alt="Diagnosis Result" width="400"/>
+<img src="screenshot/result.png" alt="Diagnosis Result" width="300"/>
 
 <h3>Consultation</h3>
-<img src="screenshot/consult.png" alt="Consultation" width="400"/>
+<img src="screenshot/consult.png" alt="Consultation" width="300"/>
 
 ## 🧪 Testing & Evaluation
 
@@ -78,7 +78,7 @@ This project is developed for academic and educational purposes. Please contact 
 
 **Khor You Qi**  
 
-LinkedIn: https://www.linkedin.com/in/khor-you-qi-tracy/
+[LinkedIn: khor-you-qi-tracy](https://www.linkedin.com/in/khor-you-qi-tracy/)
 ---
 
 > 📝 *SkinWise is aligned with SDG 3: Good Health and Well-being — making medical diagnostics more accessible and inclusive worldwide.*
