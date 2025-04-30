@@ -55,9 +55,14 @@ The skin lesion classifier is trained using MobileNetV2 with transfer learning. 
 
 ## 📸 Screenshots
 
-![Login Page](screenshot/login.png)
-![Diagnosis Result](screenshot/result.png)
-![Consultation](screenshot/consult.png)
+<h3>Login Page</h3>
+<img src="screenshot/login.png" alt="Login Page" width="400"/>
+
+<h3>Diagnosis Result</h3>
+<img src="screenshot/result.png" alt="Diagnosis Result" width="400"/>
+
+<h3>Consultation</h3>
+<img src="screenshot/consult.png" alt="Consultation" width="400"/>
 
 ## 🧪 Testing & Evaluation
 
@@ -72,6 +77,7 @@ This project is developed for academic and educational purposes. Please contact 
 ## 🙋‍♀️ Author
 
 **Khor You Qi**  
+
 LinkedIn: https://www.linkedin.com/in/khor-you-qi-tracy/
 ---
 
